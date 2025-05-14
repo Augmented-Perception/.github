@@ -5,5 +5,5 @@
 </div>
 
 <div align="center">
-    <img src="./github-metrics.svg" title="<3">
+    <img src="../github-metrics.svg" title="<3">
 </div> 
