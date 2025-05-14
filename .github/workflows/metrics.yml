@@ -1,7 +1,7 @@
 name: Metrics
 on:
   schedule:
-    - cron: "0 0 * * *"       # daily at midnight UTC
+    - cron: "0 0 * * 1"       # Every Monday at midnight UTC
   workflow_dispatch:
   push:
     branches: ["master", "main"]
@@ -14,7 +14,6 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Use your PAT here for full org access
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Target your organization
@@ -35,7 +34,6 @@ jobs:
           plugin_introduction_title: yes
 
           plugin_repositories: yes
-          plugin_repositories_limit: 10
 
           plugin_community: yes
 
