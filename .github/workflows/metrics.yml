@@ -35,12 +35,9 @@ jobs:
 
           plugin_repositories: yes
 
-          plugin_community: yes
-
           plugin_traffic: yes
 
           plugin_languages: yes
           plugin_languages_limit: 8
 
-          plugin_sponsorships: yes
           plugin_sponsors: yes
